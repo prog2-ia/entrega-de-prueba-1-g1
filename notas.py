@@ -1,10 +1,14 @@
 def leer_notas():
     """
-    Pide al usuario notas separadas por espacios y devuelve lista de floats.
+    Pide al usuario notas separadas por espacios y devuelve una lista de floats.
     Por ejemplo: 5 7.5 9 10
     """
-    # TODO (Alumno 1): implementar esta función
-    return []
+    texto = input("Introduce las notas separadas por espacios: ")
+    partes = texto.split()
+    notas = []
+    for p in partes:
+        notas.append(float(p))
+    return notas
     
 def calcular_media(notas):
     """
